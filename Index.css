@@ -2,19 +2,35 @@
     margin: 0 ;
     padding: 0;
 }
+ul , li {
+    padding: 0;
+    margin: 0;
+}
 
-.body{
+.main{
     width: 1600px;
 
 }
-.main {
+.header {
     max-width: 1600px;
     min-height: 810px;
     background-color: red;
+    display: flex;
+    align-items: center;
+    position: relative;
 }
 .logo {
-    margin-left: 224px;
-    margin-top: 32px;
     width: 78px;
     height: 100px;
+    transform: translate(224px, 32px);
+    position: absolute;
+}
+
+.menu{
+    list-style-type:none;
+    display: flex;
+
+}
+.menu_title{
+    margin-right:28px;
 }
