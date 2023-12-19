@@ -1,42 +1,43 @@
-** {
-    margin: 0;
-    padding: 0;
-    background-size: cover;
-}
+/*** {*/
+/*    margin: 0;*/
+/*    padding: 0;*/
+/*    background-size: cover;*/
+/*}*/
 
 ul, li {
     padding: 0;
     margin: 0;
 }
 
-.main {
+.page {
     width: 100%;
     height: 100%;
+}
+
+.main {
+    width: 100%;
+    margin: 0;
     font-family: "Bold",sans-serif;
-    font-size: 15px;
     font-style: normal;
-    font-weight: 700;
-    line-height: 18px;
     text-rendering: optimizeLegibility;
 }
 
 .header {
     max-width: 1600px;
-    min-height: 810px;
+    width: 100%;
+    height: 810px;
     display: flex;
     position: relative;
 }
 
 .header-background {
+    width: 100%;
     position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+    background: lightgray 50% / cover no-repeat;
     z-index: 0;
 }
 
-.logo {
+.header_logo {
     width: 78px;
     height: 100px;
     transform: translate(224px, 32px);
@@ -62,6 +63,11 @@ ul, li {
     color: #FFF;
     margin-right: 34px;
     z-index: 3;
+    cursor:pointer;
+}
+.menu_title:hover{
+    color: #FF8B00;
+    text-decoration-line: underline;
 }
 .info {
     position: relative;
@@ -77,10 +83,13 @@ ul, li {
     z-index: 3;
     display: flex;
     position: absolute;
-    margin-bottom: 60px;
-    font-size: 55px;
+    margin-bottom: 112px;
+    margin-left: -3px;
+    font-size: 53px;
 }
 .info_device-paragraph{
+    height: 90px;
+    width: 546px;
     margin-top: 115px;
     font-size: 16px;
     font-style: normal;
